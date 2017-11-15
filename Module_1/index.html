@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+      const row1 = "qwertyuiop";
+      const row2 = "asdfghjkl";
+      const row3 = "zxcvbnm";
+
+      const row1Length = row1.length;
+      const row2Length = row2.length;
+      const row3Length = row3.length;
+
+      const row1FirstLetter =  row1.charAt(0);
+      const row1LastLetter = row1.charAt(row1Length-1);
+
+      const row2FirstLetter = row2.charAt(0);
+      const row2LastLetter = row2.charAt(row2Length-1);
+
+      const row3FirstLetter = row3.charAt(0);
+      const row3LastLetter = row3.charAt(row3Length-1);
+
+      const row1Iposition = row1.indexOf ('i');
+      const row2Iposition = row2.indexOf ('i');
+      const row3Iposition = row3.indexOf ('i');
+
+      const message = 
+      `row1 - ${row1}, row2 - ${row2}, row3 - ${row3}, 
+      длинна строки 1 - ${row1Length} букв, длинна строки 2 - ${row2Length} букв, длинна строки 3 - ${row3Length} букв, 
+      первый символ первой строки - ${row1FirstLetter}, последний символ первой строки - ${row1LastLetter},
+      первый символ второй строки - ${row2FirstLetter}, последний символ второй строки - ${row2LastLetter},
+      первый символ третьей строки - ${row3FirstLetter}, последний символ третьей строки - ${row3LastLetter}, 
+      позиция символа i в первой строке - ${row1Iposition}, позиция символа i во второй строке - ${row2Iposition}, позиция символа i в третьей строке  - ${row3Iposition}`;
+
+      console.log (message);
+
+
+    </script>
+    
+</body>
+</html>
