@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        var sharm = 15;
+        var hurgada = 25;
+        var taba = 6;
+        var peopleQuantity = +prompt("ввeдитe число участников группы", '');
+        if (peopleQuantity > 0 && peopleQuantity % 1 == 0) {
+            if (peopleQuantity <= sharm || peopleQuantity <= hurgada || peopleQuantity <= taba) {
+                alert(`есть свободные места в:
+                sharm = ${sharm}, 
+                hurgada = ${hurgada}, 
+                taba = ${taba}`);
+            } else {
+                alert ("мест нет!");
+            } 
+            
+        } else {
+            alert(" не является целым положительным числом!");
+        }
+        
+    </script>
+
+</body>
+
+</html>
