@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <figcaption></figcaption>
+
+    <script>
+        const alphabet = "qwertyuiop[]asdfghjkl;'zxcvbnm,./";
+        var line1 = alphabet.slice(0, 12);
+        var line2 = alphabet.slice(12, 23);
+        var line3 = alphabet.slice(23);
+        const keyboard = [];
+        keyboard.push(line1.split(''), line2.split(''), line3.split(''));
+        console.log(keyboard[1][5] + keyboard[0][2] + keyboard[1][8] + keyboard[1][8] + keyboard[0][8]);
+        console.log(keyboard[1][6] + keyboard[1][0] + keyboard[2][3] + keyboard[1][0] + keyboard[1][1] + keyboard[2][2] +
+            keyboard[0][3] + keyboard[0][7] + keyboard[0][9] + keyboard[0][4]);
+        console.log(keyboard[0][4] + keyboard[0][3] + keyboard[1][0] + keyboard[0][7] + keyboard[2][5] + keyboard[0][2] +
+            keyboard[0][3]);
+    </script>
+
+</body>
+
+</html>
